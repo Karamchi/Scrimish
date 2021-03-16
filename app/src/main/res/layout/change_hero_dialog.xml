@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="#3E80B4"
+    android:padding="8dp"
+    android:gravity="center">
+
+    <com.example.scrimish.view.CardView
+        android:id="@+id/king_1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <com.example.scrimish.view.CardView
+        android:id="@+id/king_2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <com.example.scrimish.view.CardView
+        android:id="@+id/king_3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <com.example.scrimish.view.CardView
+        android:id="@+id/king_4"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

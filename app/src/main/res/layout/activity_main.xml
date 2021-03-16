@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/posiblefondo"
+    android:padding="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:minWidth="15dp"
+            android:textSize="20sp"
+            android:text="?"
+            style="@style/Button"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:padding="5dp"
+            android:text="Set up your deck"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/mazos_el"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_1_yo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:layout_weight="1"/>
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_2_yo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:layout_weight="1"/>
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_3_yo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:layout_weight="1"/>
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_4_yo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:layout_weight="1"/>
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/mazo_5_yo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deck_build_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deck_build_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.5"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.example.scrimish.view.MazoView
+            android:id="@+id/deck_build_layout_mazo_k"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:paddingBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            style="@style/Button"
+            android:text="Randomize"/>
+
+        <Button
+            android:id="@+id/button_change_hero"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Change hero"
+            style="@style/Button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/waiting_for_opponent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/waiting_for_opponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting for opponent to join..."
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_discard"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="0dp"
+        android:padding="10dp"
+        android:text="Discard"
+        android:textColor="#dddddd"
+        android:background="@drawable/button"
+        android:visibility="gone"/>
+
+</LinearLayout>
