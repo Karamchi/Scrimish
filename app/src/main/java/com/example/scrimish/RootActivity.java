@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.roommanager.RoomManager;
 import com.example.scrimish.dialog.CreateDialog;
 
 import java.util.List;
@@ -48,7 +49,7 @@ public class RootActivity extends AppCompatActivity {
                 view.setActivated(true);
                 enableButtons(false);
                 showLoading();
-                RoomManager.getAllRooms(new Callback<Map<String, List<String>>>() {
+                RoomManager.getAllRooms(Keys.CHANNEL_ID, new Callback<Map<String, List<String>>>() {
                     @Override
                     public void onResponse(Call<Map<String, List<String>>> call, Response<Map<String, List<String>>> response) {
                         hideLoading();
@@ -128,7 +129,7 @@ public class RootActivity extends AppCompatActivity {
     }
 
     private void startInRoom(String room) {
-        RoomManager.getInstance().connectToRoom(room);
+        RoomManager.getInstance().connectToRoom(Keys.CHANNEL_ID, room);
         Intent intent = new Intent(RootActivity.this, BuildDeckActivity.class);
         startActivity(intent);
     }

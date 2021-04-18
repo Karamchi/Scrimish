@@ -1,0 +1,3 @@
+[submodule "RoomManager"]
+	path = RoomManager
+	url = https://github.com/Karamchi/RoomManager

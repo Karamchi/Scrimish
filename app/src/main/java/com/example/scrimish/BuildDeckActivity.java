@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.roommanager.RoomManager;
 import com.example.scrimish.dialog.ChangeHeroDialog;
 import com.example.scrimish.model.Carta;
 import com.example.scrimish.model.Human;
@@ -285,7 +286,7 @@ public class BuildDeckActivity extends AppCompatActivity {
         if (!mJumping) {
             RoomManager.getInstance().disconnect();
         }
-        RoomManager.getInstance().stopRoomkeeperThread();
+//        RoomManager.getInstance().stopRoomkeeperThread();
         super.onDestroy();
     }
 
